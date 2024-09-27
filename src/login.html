@@ -9,13 +9,15 @@
 <body class="w-screen h-screen bg-indigo-950">
  <div class="flex flex-col justify-center items-center h-screen gap-7">
     <h1 class="text-6xl text-white font-black">CY2</h1>
-    <form class="flex flex-col gap-4">
-        <input type="text" placeholder="Digite seu usuario"  class="p-5 rounded-full">
-        <input type="password" placeholder="digite sua senha"  class="p-5 w-72 rounded-full">
+    <form class="flex flex-col gap-4" id="loginForm">
+        <input type="text" placeholder="Digite seu usuario"  class="p-5 rounded-full" id="loginUser">
+        <input type="password" placeholder="digite sua senha"  class="p-5 w-72 rounded-full" id="loginSenha">
         <button type="submit" class="p-5 bg-indigo-700 rounded-full text-stone-200" ><a href="home.html">Entre</a></button>
     </form>
 
     <p class="text-stone-200 items-center mt-10 text-x1 font-semibold">Nâo tem uma conta? <a href="" class="italic underline text-violet-500">Registre-se</a></p>
  </div>
+
+ <script src="login.js"></script>
 </body>
 </html>
