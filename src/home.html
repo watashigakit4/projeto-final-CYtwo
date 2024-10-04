@@ -21,10 +21,12 @@
 
         <div class="flex flex-col justify-center items-center mt-12 w-screen">
             <input type="text" placeholder="Digite o nome do jogo que deseja pesquisar"
-                class="w-5/12 placeholder:italic text-center p-4 rounded-full">
+                class="w-5/12 placeholder:italic text-center p-4 rounded-full" id="campo-pesquisa">
             <button
-                class="bg-gradient-to-r from-indigo-500  to-sky-500 w-48 mt-6 p-3 rounded-full text-white">Buscar</button>
+                class="bg-gradient-to-r from-indigo-500  to-sky-500 w-48 mt-6 p-3 rounded-full text-white" onclick="pesquisar()">Buscar</button>
         </div>
+         
+        <div class="bg-slate-300 w-9/12 flex-row justify-start items-center mt-12 rounded-lg p-6 hidden" id="resultado-busca"></div>
     </main>
 
     <footer class="flex flex-col justify-center items-center w-screen mt-36">
@@ -33,5 +35,8 @@
             <p class="texte-x1 font-semibold">Todos os direitos reservados &copy;2024</p>
         </div>
     </footer>
+
+    <script src="./js/dados.js"></script>
+    <script src="./js/home.js"></script>
 </body>
 </html>
